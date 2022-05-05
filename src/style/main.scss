@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.home-main-con{
+    min-height: 100vh;
+    background-color: gainsboro;
+    .procard-con{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+
+    }
+}
+
+.product_main_con{
+    min-height: 100vh;
+    background-color: yellow;
+}
+
+.pro_main_con{
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid black;
+    background-color: white;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    transition: 0.5s;
+    .pro_img{
+        width: 15rem;
+        height: 15rem;
+        border-radius: 10px;
+    }
+    .pro_text_con{
+        width: 100%;
+        margin: 10px 0;
+        text-align: start;
+        h3{
+            text-align: start;
+        }
+    }
+}
+
+.pro_main_con:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+    // transition-timing-function: ease-in-out;
+    
+}
+
+//navbar
+.navbar_main_con{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 100px;
+    background-color: gray;
+    padding: 20px;
+    .logo{
+        height: 60px;
+        border-radius: 5px;
+    }
+
+    .nav_left_con{
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 2em;
+        .cart-con{
+            position: relative;
+            margin-right: 2em;
+        .cart_add_no{
+            position:absolute;
+            top: 0;
+            right: 0;
+            height: 1.5em;
+            width: 1.5em;
+            border-radius: 50%;
+            background-color: red;
+            font-weight: 600;
+        }
+    }
+        
+    }
+}
+
+.cart-main-con{
+    padding: 5rem;
+    .cart-main-in{
+        display: flex;
+        align-items: center;
+      flex-wrap: wrap;
+        min-height: 30rem;
+ 
+       
+        .item-img{
+            // border: 1px solid black;
+            flex: 30%;
+            width: 15rem;
+            height: 25rem;
+ 
+
+        }
+        .content{
+            flex: 70%;
+            // border: 1px solid black;
+            display: flex;
+      
+            text-align: start;
+            min-height: 25rem;
+            flex-direction: column;
+            padding: 0 10rem;
+            .add_cart_btn{
+                height: 3rem;
+                width: 5rem;
+                margin: 1rem 0;
+
+            }
+            h1{
+                margin: 1rem 0;
+            }
+            p{
+                margin: 1rem 0;
+            }
+        }
+    }
+    @media screen and (max-width: 1080px) {
+
+        .content{
+            padding: 0 !important;
+        }
+        
+    }
+   
+}
+@media screen and (max-width: 480px) {
+    .cart-main-con{
+        padding: 1rem !important;
+    }
+}
